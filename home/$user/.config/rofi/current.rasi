@@ -1,0 +1,161 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 1.7.5+wayland3
+ **/
+* {
+    foreground:       rgba ( 255, 238, 221, 100 % );
+    lightyellow:      rgba ( 255, 167, 93, 100 % );
+    red:              IndianRed;
+    tcyan:            rgba ( 204, 176, 196, 87 % );
+    blue:             CornflowerBlue;
+    lightgreen:       rgba ( 136, 204, 34, 100 % );
+    green:            rgba ( 134, 175, 128, 100 % );
+    background-color: transparent;
+    lightred:         rgba ( 204, 85, 51, 100 % );
+    font:             "Source Code Pro 10";
+    magenta:          BurlyWood;
+    tlightblack:      rgba ( 85, 68, 68, 80 % );
+    dark:             rgba ( 28, 28, 28, 100 % );
+    lightblack:       rgba ( 85, 68, 68, 100 % );
+    backlight:        rgba ( 204, 255, 238, 87 % );
+    black:            rgba ( 61, 53, 42, 100 % );
+    transparent:      transparent;
+    lightcyan:        LightSteelBlue;
+    lightmagenta:     rgba ( 153, 102, 0, 100 % );
+    lightwhite:       rgba ( 221, 204, 187, 100 % );
+    cyan:             LightSteelBlue;
+    white:            rgba ( 187, 170, 153, 100 % );
+    yellow:           rgba ( 232, 174, 91, 100 % );
+    lightblue:        SkyBlue;
+    highlight:        bold underline White;
+}
+window {
+    text-color:       var(magenta);
+    transparency:     "real";
+    padding:          10px ;
+    children:         [ "mainbox" ];
+    orientation:      horizontal;
+    location:         center;
+    anchor:           center;
+    background-color: var(transparent);
+    border-radius:    10px ;
+    border:           0px ;
+    spacing:          0;
+}
+mainbox {
+    spacing:  0;
+    children: [ "inputbar","message","listview" ];
+}
+message {
+    padding:          5;
+    background-color: var(tcyan);
+    border-color:     var(foreground);
+    font:             "Source Code Pro 8";
+    border:           0px 2px 2px ;
+    text-color:       var(black);
+}
+inputbar {
+    padding:          11px ;
+    background-color: var(tlightblack);
+    text-color:       var(lightgreen);
+    font:             "Source Code Pro 18";
+    border-color:     var(foreground);
+    border:           2px ;
+    border-radius:    15px 15px 0px 0px ;
+}
+entry {
+    text-font:  inherit;
+    text-color: inherit;
+}
+prompt {
+    text-font:  inherit;
+    margin:     0px 0.3000em 0.0000em 0.0000em ;
+    text-color: inherit;
+}
+case-indicator {
+    text-font:  inherit;
+    text-color: inherit;
+}
+listview {
+    padding:          8px ;
+    background-color: rgba ( 28, 28, 28, 80 % );
+    dynamic:          false;
+    border-color:     var(foreground);
+    lines:            10;
+    border-radius:    0px 0px 15px 15px ;
+    border:           0px 2px 2px ;
+}
+element {
+    padding:          3px ;
+    background-color: transparent;
+    vertical-align:   0.50;
+    font:             inherit;
+    border-radius:    4px ;
+    text-color:       var(foreground);
+}
+element selected.normal {
+    background-color: var(lightyellow);
+}
+element selected.active {
+    foreground:       var(dark);
+    background-color: var(lightblue);
+}
+element selected.urgent {
+    foreground:       var(dark);
+    background-color: var(lightred);
+}
+element normal.active {
+    foreground: var(lightblue);
+}
+element normal.urgent {
+    foreground: var(lightred);
+}
+element alternate.active {
+    foreground: var(lightblue);
+}
+element alternate.urgent {
+    foreground: var(lightred);
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+vertb {
+    expand:   false;
+    children: [ "dummy0","mode-switcher","dummy1" ];
+}
+dummy0 {
+    expand: true;
+}
+dummy1 {
+    expand: true;
+}
+mode-switcher {
+    orientation: vertical;
+    expand:      false;
+    spacing:     0px ;
+    border:      0px ;
+}
+button {
+    text-color:       var(foreground);
+    padding:          6px ;
+    background-color: var(tlightblack);
+    border-radius:    4px 0px 0px 4px ;
+    border-color:     var(foreground);
+    font:             "FontAwesome 22";
+    horizontal-align: 0.50;
+    border:           2px 0px 2px 2px ;
+}
+button selected.normal {
+    background-color: var(backlight);
+    border-color:     var(foreground);
+    text-color:       var(dark);
+    border:           2px 0px 2px 2px ;
+}
+error-message {
+    padding:          1.0000em ;
+    background-color: Red;
+    expand:           true;
+    border-color:     DarkRed;
+    border:           2px ;
+}
