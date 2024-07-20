@@ -115,15 +115,21 @@ button:hover {
 }
 
 #clock {
+    border : 5;
+    border-radius: 20;
     background-color: #64727D;
 }
 
 #battery {
+    border : 5;
+    border-radius: 20;
     background-color: #ffffff;
     color: #000000;
 }
 
 #battery.charging, #battery.plugged {
+    border : 5;
+    border-radius: 20;
     color: #ffffff;
     background-color: #26A65B;
 }
@@ -137,6 +143,8 @@ button:hover {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
+    border : 5;
+    border-radius: 20;
     background-color: #f53c3c;
     color: #ffffff;
     animation-name: blink;
@@ -170,46 +178,66 @@ label:focus {
 }
 
 #cpu {
+    border : 5;
+    border-radius: 20;
     background-color: #2ecc71;
     color: #000000;
 }
 
 #memory {
+    border : 5;
+    border-radius: 20;
     background-color: #9b59b6;
 }
 
 #disk {
+    border : 5;
+    border-radius: 20;
     background-color: #964B00;
 }
 
 #backlight {
+    border : 5;
+    border-radius: 20;
     background-color: #90b1b1;
 }
 
 #network {
+    border : 5;
+    border-radius: 20;
     background-color: #2980b9;
 }
 
 #network.disconnected {
+    border : 5;
+    border-radius: 20;
     background-color: #f53c3c;
 }
 
 #pulseaudio {
+    border : 5;
+    border-radius: 20;
     background-color: #f1c40f;
     color: #000000;
 }
 
 #pulseaudio.muted {
+    border : 5;
+    border-radius: 20;
     background-color: #90b1b1;
     color: #2a5c45;
 }
 
 #wireplumber {
+    border : 5;
+    border-radius: 20;
     background-color: #fff0f5;
     color: #000000;
 }
 
 #wireplumber.muted {
+    border : 5;
+    border-radius: 20;
     background-color: #f53c3c;
 }
 
@@ -228,6 +256,8 @@ label:focus {
 }
 
 #temperature {
+    border : 5;
+    border-radius: 20;
     background-color: #f0932b;
 }
 
@@ -236,23 +266,33 @@ label:focus {
 }
 
 #tray {
+    border : 5;
+    border-radius: 20;
     background-color: #2980b9;
 }
 
 #tray > .passive {
+    border : 5;
+    border-radius: 20;
     -gtk-icon-effect: dim;
 }
 
 #tray > .needs-attention {
+    border : 5;
+    border-radius: 20;
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
 
 #idle_inhibitor {
+    border : 5;
+    border-radius: 20;
     background-color: #2d3436;
 }
 
 #idle_inhibitor.activated {
+    border : 5;
+    border-radius: 20;
     background-color: #ecf0f1;
     color: #2d3436;
 }

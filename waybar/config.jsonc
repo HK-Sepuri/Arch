@@ -7,24 +7,27 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-
+        "cpu",
+        "memory",
+        "disk",
+        "temperature",
+        //"hyprland/window",
         "sway/mode",
-        "sway/scratchpad",
+        "hyprland/scratchpad",
         "custom/media"
     ],
     "modules-center": [
-        "hyprland/workspaces",
-        "sway/window"
+        "cava",
+        "hyprland/workspaces"
+
     ],
     "modules-right": [
+        "custom/weather-layout",
         "mpd",
         //"idle_inhibitor",
         "pulseaudio",
         //"network",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
         "backlight",
         "sway/language",
         "battery",
@@ -50,7 +53,7 @@
             "8": "८",
             "9": "९",
             "10": "०",
-            "active": "",
+            "active": ""
          },
          "persistent-workspaces": {
       "*":  9
@@ -68,6 +71,15 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
+    "custom/weather-layout": {
+        "format": "{}°",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "wttrbar",
+        "return-type": "json",
+        "on-click": "kitty -e wttr Nagpur"
+    },
+
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",
@@ -94,6 +106,28 @@
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
+"cava": {
+//      "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+        "framerate": 30,
+        "autosens": 1,
+        "sensitivity": 100,
+        "bars": 14,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -106,22 +140,35 @@
         "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "<big>{:%A, %d.%B %Y }</big>\n<tt><small>{calendar}</small></tt>",
+        "format": " {:%a %d %b  %I:%M %p}",	//12 hour format
+        //"format": " {:%a %d %b  %H:%M}",	//24 hour format
+        "format-alt": " {:%d/%m/%Y  %H:%M:%S}",
+        //"max-length": 200
+        "interval": 1,
+        "on-click": "~/.config/waybar/scripts/OCV",
     },
+
     "cpu": {
+        "interval": 5,
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": true
     },
     "memory": {
-        "format": "{}% "
+        "interval": 5,
+        "format": "{percentage}%   {swapPercentage}% 󰓡",
+        "on-click": "kitty -e btop"
+    },
+    "disk": {
+    "interval": 30,
+    "format": "{percentage_free}% ",
+    "path": "/"
     },
     "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "thermal-zone": 4,
+        "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
         "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
+        "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
@@ -170,7 +217,7 @@
     //},
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}  {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
