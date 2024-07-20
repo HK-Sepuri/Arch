@@ -11,6 +11,7 @@
         "memory",
         "disk",
         "temperature",
+	"battery",
         //"hyprland/window",
         "hyprland/scratchpad",
         "custom/media"
@@ -25,7 +26,6 @@
         "pulseaudio",
         //"network",
         "backlight",
-        "battery",
         "clock",
         "tray"
     ],
