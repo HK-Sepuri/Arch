@@ -21,6 +21,7 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
+        "custom/keyboard-layout",
         "custom/weather-layout",
         //"idle_inhibitor",
         "pulseaudio",
@@ -200,15 +201,19 @@
         "power-saver": ""
       }
     },
-    //"network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-    //    "format-wifi": "{essid} ({signalStrength}%) ",
-    //    "format-ethernet": "{ipaddr}/{cidr} ",
-    //    "tooltip-format": "{ifname} via {gwaddr} ",
-    //    "format-linked": "{ifname} (No IP) ",
-    //    "format-disconnected": "Disconnected ⚠",
-    //    "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    //},
+    "custom/keyboard-layout": {
+        "format": " Cheat", // Icon: keyboard
+      "on-click": "~/.config/waybar/scripts/keyhint.sh"
+   },
+    "network": {
+         "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}  {format_source}",
