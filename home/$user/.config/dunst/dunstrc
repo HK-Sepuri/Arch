@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (200,300)
+    width = (0,400)
 
     # The maximum height of a single notification, excluding the frame.
     height = 300
@@ -33,13 +33,13 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 10x50
+    offset = 0x25
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
 
     # Maximum number of notification (0 means no limit)
-    notification_limit = 20
+    notification_limit = 0
 
     ### Progress bar ###
 
@@ -68,7 +68,7 @@
     progress_bar_corners = all
 
     # Corner radius for the icon image.
-    icon_corner_radius = 2
+    icon_corner_radius = 10
 
     # Define which corners to round when drawing the icon image. If icon_corner_radius
     # is set to 0 this option will be ignored.
@@ -90,17 +90,17 @@
     separator_height = 0
 
     # Padding between text and separator.
-    padding = 8
+    padding = 12
 
     # Horizontal padding.
     horizontal_padding = 8
 
     # Padding between text and icon.
-    text_icon_padding = 10
+    text_icon_padding = 20
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
     frame_color = "#aaaaaa"
@@ -136,7 +136,7 @@
 
     ### Text ###
 
-    font = Monospace 12
+    font = Symbola Regular 11
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -282,11 +282,11 @@
     # These settings are Wayland-specific. They have no effect when using X11
 
     # Uncomment this if you want to let notifications appear under fullscreen
-    # applications (default: overlay)
-    # layer = top
+    applications (default: overlay)
+    layer = top
 
     # Set this to true to use X11 output on Wayland.
-    force_xwayland = true
+    # force_xwayland = true
 
     ### Legacy
 
@@ -335,7 +335,7 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#222222"
     foreground = "#888888"
-    timeout = 10
+    timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -352,7 +352,7 @@
     foreground = "#ffffff"
     frame_color = "#ff0000"
     timeout = 0
-    override_pause_level = 60
+    # override_pause_level = 60
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -436,9 +436,9 @@
 #    msg_urgency = critical
 #    fullscreen = show
 
-#[espeak]
+# [espeak]
 #    summary = "*"
-#    script = dunst_espeak.sh
+#    script = ~/.config/dunst/notification_sound.sh
 
 #[script-test]
 #    summary = "*script*"
@@ -484,3 +484,6 @@
 #    set_stack_tag = "volume"
 #
 # vim: ft=cfg
+[play_sound]
+    summary = "*"
+    script = /home/hari/.config/dunst/notification_sound.sh
