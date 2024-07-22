@@ -247,6 +247,15 @@ label:focus {
     min-width: 100px;
 }
 
+#custom-power{
+    border : 5;
+    border-radius: 20;
+    margin-top:2px;
+    background-color: #000000;
+    color: #ffffff;
+    padding-right: 10px;  
+}
+
 #custom-media.custom-spotify {
     background-color: #66cc99;
 }

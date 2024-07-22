@@ -35,5 +35,5 @@ yad --width=530 --height=620 \
 "Fn+F9" "Keyboard Backlight" "(turnoff)" \
 "Fn+F10" "Keyboard Backlight" "(turnon set 50%)" \
 "Fn+F11" "Keyboard Backlight" "(turnon set 100%)" \
-"+MouseLeft" "Move Window" "(drag windows)" \
+"+Mouse+Left" "Move Window" "(drag windows)" \
 "" "" "     Window closed in 60 sec."\
