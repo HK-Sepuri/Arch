@@ -22,7 +22,7 @@ configuration {
 /*	drun-url-launcher: "xdg-open";*/
 /*	disable-history: false;*/
 /*	ignored-prefixes: "";*/
-/*	sort: false;*/
+	sort: true;
 /*	sorting-method: "normal";*/
 /*	case-sensitive: false;*/
 /*	cycle: true;*/
@@ -155,6 +155,6 @@ configuration {
   }
 }
 
-@theme "/home/hari/.config/rofi/current.rasi"
+@theme "/home/hari/.cache/wal/colors-rofi-light.rasi"
 
 //@theme "/usr/share/rofi/themes/arthur.rasi"

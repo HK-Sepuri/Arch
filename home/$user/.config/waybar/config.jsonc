@@ -2,7 +2,7 @@
 {
     "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -21,8 +21,8 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "custom/keyboard-layout",
         "custom/weather-layout",
+        "custom/keyboard-layout",
         //"idle_inhibitor",
         "pulseaudio",
         //"network",
@@ -72,9 +72,7 @@
         "tooltip": true,
         "interval": 3600,
         "exec": "wttrbar",
-        "return-type": "json",
-        "on-click": "echo 'Clicked!'"
-
+        "return-type": "json"
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
@@ -208,7 +206,7 @@
       "on-click": "~/.config/waybar/scripts/keyhint.sh"
    },
    "custom/power": {
-    "format":" ⏻",
+    "format":"⏻",
      "on-click": "wlogout",
     "tooltip": false
 },
