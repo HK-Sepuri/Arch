@@ -32,6 +32,7 @@ yad --width=530 --height=620 \
 "+(0-9)" "Move To Workspace" "(change to workspace 0-9)" \
 "+Shift+(0-9)" "Move Active Window To Workspace" "(move app to workspace 0-9)" \
 "+J" "Togglesplit" "Toggles to Vertical/Horizontal" \
+"+\`" "All Windows" "Shows all 9 Windows" \
 "Fn+F9" "Keyboard Backlight" "(turnoff)" \
 "Fn+F10" "Keyboard Backlight" "(turnon set 50%)" \
 "Fn+F11" "Keyboard Backlight" "(turnon set 100%)" \

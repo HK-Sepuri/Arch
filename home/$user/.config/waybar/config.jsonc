@@ -11,13 +11,13 @@
         "memory",
         "disk",
         "temperature",
-	"battery",
+	    "battery"
         //"hyprland/window",
-        "hyprland/scratchpad",
-        "custom/media"
+        //"hyprland/scratchpad",
+        //"custom/media"
     ],
     "modules-center": [
-        "cava",
+        //"cava",
         "hyprland/workspaces"
     ],
     "modules-right": [
