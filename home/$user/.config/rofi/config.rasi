@@ -155,6 +155,10 @@ configuration {
   }
 }
 
-@theme "/home/hari/.cache/wal/colors-rofi-light.rasi"
+//@theme "/home/hari/.cache/wal/colors-rofi-light.rasi"
 
-//@theme "/usr/share/rofi/themes/arthur.rasi"
+@theme "/home/hari/.cache/wal/colors-rofi-dark.rasi"
+
+//@theme "/home/hari/.config/rofi/current.rasi"
+
+//@theme "/home/hari/.config/rofi/colors-rofi-dark.rasi"
