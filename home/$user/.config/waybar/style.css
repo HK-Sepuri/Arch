@@ -26,7 +26,7 @@ button {
     padding: 0 5px;
     transition: none;
     background-color: @color1;
-    color: @color7;
+    color: #FFD700;
 }
 
 #workspaces button:hover {
@@ -80,28 +80,34 @@ button {
     border: 5px;
     border-radius: 20px;
     background-color: @color1;
-    color: @color15;
+    color: #000000;
 }
 
 #memory {
     border: 5px;
     border-radius: 20px;
+    color: #000000;
     background-color: @color2;
 }
 
 #disk {
     border: 5px;
     border-radius: 20px;
+    color: #000000;
     background-color: @color3;
 }
 
 #temperature {
     border: 5px;
     border-radius: 20px;
+    color: #000000;
     background-color: @color4;
 }
 
 #temperature.critical {
+    border: 5px;
+    border-radius: 20px;
+    color: #000000;
     background-color: @color9;
 }
 
@@ -109,13 +115,13 @@ button {
     border: 5px;
     border-radius: 20px;
     background-color: @color5;
-    color: @foreground;
+    color: #000000;
 }
 
 #battery.charging, #battery.plugged {
     border: 5px;
     border-radius: 20px;
-    color: @foreground;
+    color: #000000;
     background-color: @color6;
 }
 
@@ -123,7 +129,7 @@ button {
     border: 5px;
     border-radius: 20px;
     background-color: @color9;
-    color: @color0;
+    color: #000000;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -134,13 +140,14 @@ button {
 #custom-keyboard-layout{
     border: 5px;
     border-radius: 20px;
-    color: @cursor;
+    color: #000000;
     background-color: @color6;
 } 
 
  #custom-weather-layoutt{
     border: 5px;
     border-radius: 20px;
+    
     background-color: @color8;
 }
 
@@ -148,26 +155,28 @@ button {
     border: 5px;
     border-radius: 20px;
     background-color: @color9;
-    color: @color0;
+    color: #000000;
 }
 
 #pulseaudio.muted {
     border: 5px;
     border-radius: 20px;
     background-color: @color10;
-    color: @color1;
+    color: #000000;
 }
 
 
 #backlight {
     border: 5px;
     border-radius: 20px;
+    color: #000000;
     background-color: @color11;
 }
 
 #clock {
     border: 5px;
     border-radius: 20px;
+    color: #000000;
     background-color: @color12;
 }
 
