@@ -51,9 +51,6 @@ cp "$WAY_COLORS_FILE" "$WAYBAR_FFOLDER"
 
 killall -SIGUSR2 waybar
 
-# Apply Discord theme based on Pywal colors
-pywal-discord -t theme-dark
-
 # Update Kitty configuration
 kitty @ set-colors --all ~/.config/kitty/colors-kitty.conf  # Apply colors 
 
