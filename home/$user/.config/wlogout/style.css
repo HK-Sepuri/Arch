@@ -4,47 +4,76 @@
 }
 
 window {
-	background-color: rgba(12, 12, 12, 0.9);
+	background-color: transparent;
 }
 
 button {
-    border-radius: 0;
-    border-color: black;
+	border-radius: 100%;
+	border-color: transparent;
 	text-decoration-color: #FFFFFF;
-    color: #FFFFFF;
-	background-color: #1E1E1E;
+	color: #FFFFFF;
+	background-color: transparent;
+	outline-style: none;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 0px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25%;
-}
+  }
 
 button:focus, button:active, button:hover {
-	background-color: #3700B3;
+	background-color: #ff6200;
 	outline-style: none;
 }
 
+button:hover {
+    background-color: #ff0000;
+}
+
 #lock {
-    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+    background-image: url("/home/hari/.config/wlogout/icons/lock.png");
+}
+
+#lock:hover {
+    background-image: url("/home/hari/.config/wlogout/icons/lock-hover.png");
 }
 
 #logout {
-    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+    background-image: url("/home/hari/.config/wlogout/icons/logout.png");
+}
+
+#logout:hover {
+    background-image: url("/home/hari/.config/wlogout/icons/logout-hover.png");
 }
 
 #suspend {
-    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+    background-image: url("/home/hari/.config/wlogout/icons/sleep.png");
+}
+
+#suspend:hover {
+    background-image: url("/home/hari/.config/wlogout/icons/sleep-hover.png");
 }
 
 #hibernate {
-    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+    background-image: url("/home/hari/.config/wlogout/icons/hibernate.png");
+}
+
+#hibernate:hover {
+    background-image: url("/home/hari/.config/wlogout/icons/hibernate-hover.png");
 }
 
 #shutdown {
-    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    background-image: url("/home/hari/.config/wlogout/icons/power.png");
+}
+
+#shutdown:hover {
+    background-image: url("/home/hari/.config/wlogout/icons/power-hover.png");
 }
 
 #reboot {
-    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    background-image: url("/home/hari/.config/wlogout/icons/restart.png");
+}
+
+#reboot:hover {
+    background-image: url("/home/hari/.config/wlogout/icons/restart-hover.png");
 }
