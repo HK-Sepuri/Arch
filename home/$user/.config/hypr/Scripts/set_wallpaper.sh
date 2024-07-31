@@ -70,4 +70,5 @@ pywalfox update
 swaync-client --reload-config
 swaync-client -rs
 
+
 echo "Wallpaper set to $random_wallpaper for all monitors and configuration updated.
