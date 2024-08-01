@@ -6,17 +6,17 @@ WAL_COLOR_FILE="/home/hari/.cache/wal/colors"  # Change this to the actual path 
 CAVA_CONFIG_FILE="/home/hari/.config/cava/config"  # Change this to the actual path of your Cava config file
 
 # Read the first 8 lines from the wal/color file
-colors=$(head -n 8 "$WAL_COLOR_FILE")
+colors=$(head -n 16 "$WAL_COLOR_FILE")
 
 # Extract colors
 color1=$(echo "$colors" | sed -n '1p' | tr -d '\n')
-color2=$(echo "$colors" | sed -n '2p' | tr -d '\n')
-color3=$(echo "$colors" | sed -n '3p' | tr -d '\n')
-color4=$(echo "$colors" | sed -n '4p' | tr -d '\n')
-color5=$(echo "$colors" | sed -n '5p' | tr -d '\n')
-color6=$(echo "$colors" | sed -n '6p' | tr -d '\n')
-color7=$(echo "$colors" | sed -n '7p' | tr -d '\n')
-color8=$(echo "$colors" | sed -n '8p' | tr -d '\n')
+color2=$(echo "$colors" | sed -n '3p' | tr -d '\n')
+color3=$(echo "$colors" | sed -n '5p' | tr -d '\n')
+color4=$(echo "$colors" | sed -n '7p' | tr -d '\n')
+color5=$(echo "$colors" | sed -n '9p' | tr -d '\n')
+color6=$(echo "$colors" | sed -n '11p' | tr -d '\n')
+color7=$(echo "$colors" | sed -n '13p' | tr -d '\n')
+color8=$(echo "$colors" | sed -n '15p' | tr -d '\n')
 
 # Create the new gradient configuration without extra #
 new_gradient=$(cat <<EOF
