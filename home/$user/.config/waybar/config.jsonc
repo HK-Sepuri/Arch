@@ -11,21 +11,16 @@
         "memory",
         "disk",
         "temperature",
-	    "battery"
-        //"hyprland/window",
-        //"hyprland/scratchpad",
-        //"custom/media"
+	    "battery",
+        "cava"
     ],
     "modules-center": [
-        //"cava",
         "hyprland/workspaces"
     ],
     "modules-right": [
         "custom/weather-layout",
         "custom/keyboard-layout",
-        //"idle_inhibitor",
         "pulseaudio",
-        //"network",
         "backlight",
         "clock",
         "custom/notification",
@@ -58,16 +53,6 @@
         },
         "separate-outputs": true
     },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
-    },
     "custom/weather-layout": {
         "format": "{}°",
         "tooltip": true,
@@ -75,54 +60,9 @@
         "exec": "wttrbar",
         "return-type": "json"
     },
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-        "unknown-tag": "N/A",
-        "interval": 5,
-        "consume-icons": {
-            "on": " "
+    "cava": {
+            "cava_config": "/home/hari/.config/cava/config"
         },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
-    },
-"cava": {
-//      "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
-        "framerate": 30,
-        "autosens": 1,
-        "sensitivity": 100,
-        "bars": 14,
-        "lower_cutoff_freq": 50,
-        "higher_cutoff_freq": 10000,
-        "method": "pulse",
-        "source": "auto",
-        "stereo": true,
-        "reverse": false,
-        "bar_delimiter": 0,
-        "monstercat": false,
-        "waves": false,
-        "noise_reduction": 0.77,
-        "input_delay": 2,
-        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
-        "actions": {
-                   "on-click-right": "mode"
-                   }
-    },
     
     "custom/notification": {
         "tooltip": false,
@@ -146,14 +86,6 @@
         "escape": true  
     
       },
-
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
     "tray": {
         // "icon-size": 21,
         "spacing": 10
@@ -167,7 +99,6 @@
         "interval": 1,
         "on-click": "~/.config/waybar/scripts/OCV"
     },
-
     "cpu": {
         "interval": 5,
         "format": "{usage}% ",
@@ -215,17 +146,6 @@
     "battery#bat2": {
         "bat": "BAT2"
     },
-    "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": "",
-        "power-saver": ""
-      }
-    },
     "custom/keyboard-layout": {
         "format": " Cheat", // Icon: keyboard
       "on-click": "~/.config/waybar/scripts/keyhint.sh"
@@ -235,15 +155,6 @@
      "on-click": "wlogout",
     "tooltip": false
 },
-    "network": {
-         "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}  {format_source}",
@@ -262,17 +173,5 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }

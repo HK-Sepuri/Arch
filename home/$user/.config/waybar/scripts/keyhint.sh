@@ -24,7 +24,7 @@ yad --width=530 --height=620 \
 "+Y" "clipboard manager" "(clipse)" \
 "Print" "screenshot" "(hyprshot output)" \
 "+Print" "screenshot window" "(hyprshot window)" \
-"+Shift+Print" "screenshot region" "(hyprshot region)" \
+"Shift+Print" "screenshot region" "(hyprshot region)" \
 "+Left" "Move Focus" "(left)" \
 "+Right" "Move Focus" "(right)" \
 "+Up" "Move Focus" "(up)" \
