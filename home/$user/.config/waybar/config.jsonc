@@ -4,15 +4,14 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 3, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "cpu",
         "memory",
         "disk",
         "temperature",
-	    "battery",
-        "cava"
+	    "battery"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -60,9 +59,6 @@
         "exec": "wttrbar",
         "return-type": "json"
     },
-    "cava": {
-            "cava_config": "/home/hari/.config/cava/config"
-        },
     
     "custom/notification": {
         "tooltip": false,
@@ -110,9 +106,9 @@
         "on-click": "kitty -e btop"
     },
     "disk": {
-    "interval": 5,
-    "format": "{percentage_free}% ",
-    "path": "/"
+        "interval": 5,
+        "format": "{percentage_free}% ",
+        "path": "/"
     },
     "temperature": {
         "thermal-zone": 4,
@@ -147,13 +143,13 @@
         "bat": "BAT2"
     },
     "custom/keyboard-layout": {
-        "format": " Cheat", // Icon: keyboard
+      "format": " Cheat", // Icon: keyboard
       "on-click": "~/.config/waybar/scripts/keyhint.sh"
    },
    "custom/power": {
-    "format":"⏻",
-     "on-click": "wlogout",
-    "tooltip": false
+      "format":"⏻",
+      "on-click": "wlogout",
+      "tooltip": false
 },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
