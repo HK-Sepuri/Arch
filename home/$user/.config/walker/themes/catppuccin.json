@@ -1,0 +1,59 @@
+{
+  "ui": {
+    "anchors": {
+      "bottom": true,
+      "left": true,
+      "right": true,
+      "top": true
+    },
+    "window": {
+      "box": {
+        "h_align": "center",
+        "margins": {
+          "bottom": 200,
+          "top": 200 
+        },
+        "orientation": "vertical",
+        "scroll": {
+          "list": {
+            "always_show": true,
+            "item": {
+              "activation_label": {
+                "h_align": "end",
+                "h_expand": true,
+                "justify": "right",
+                "x_align": 1,
+                "font_size": 16  
+              },
+              "icon": {
+                "theme": "BeautyLine",
+                "size": 24  
+              },
+              "spacing": 5,
+              "text": {
+                "h_align": "fill",
+                "h_expand": true,
+                "revert": true,
+                "font_size": 16 
+              }
+            },
+            "max_height": 300,
+            "max_width": 500,
+            "min_width": 200,
+            "width": 500
+          },
+          "overlay_scrolling": false
+        },
+        "search": {
+          "spacing": 10,
+          "v_align": "start",
+          "width": 200
+        },
+        "spacing": 10,
+        "v_align": "start"
+      },
+      "h_align": "fill",
+      "v_align": "fill"
+    }
+  }
+}

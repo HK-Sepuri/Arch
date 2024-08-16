@@ -1,0 +1,137 @@
+@import url(file:///home/hari/.cache/wal/colors-waybar.css);
+
+#window,
+#box,
+#search,
+#password,
+#input,
+#typeahead,
+#spinner,
+#list,
+child,
+scrollbar,
+slider,
+#item,
+#text,
+#label,
+#sub,
+#activationlabel {
+  all: unset;
+}
+
+#window {
+  background: none;
+}
+
+#box {
+  background: none;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow:
+    0 19px 38px rgba(0, 0, 0, 0.3),
+    0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+scrollbar {
+  background: none;
+  padding-left: 8px;
+}
+
+slider {
+  min-width: 5px;
+  background: @colour2;
+  opacity: 0.5;
+}
+
+#search {
+}
+
+#password,
+#input,
+#typeahead {
+  background: @colour3;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-radius: 32px;
+  color: #c6d0f5;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#input {
+  background: none;
+}
+
+#input > *:first-child,
+#typeahead > *:first-child {
+  color: @color4;
+  margin-right: 7px;
+}
+
+#input > *:last-child,
+#typeahead > *:last-child {
+  color: @color5;
+}
+
+#spinner {
+}
+
+#typeahead {
+  color: #ff0000;
+}
+
+#input placeholder {
+  opacity: 0.5;
+}
+
+#list {
+}
+
+child {
+  border-radius: 8px;
+  color: @color6;
+  padding: 4px;
+}
+
+child:selected,
+child:hover {
+  background: @color5;
+  box-shadow: none;
+  color: #000000;
+}
+
+#item {
+}
+
+#icon {
+}
+
+#text {
+}
+
+#label {
+  font-weight: bold;
+  color: @color2;
+}
+
+#sub {
+  opacity: 0.5;
+  color: @color4;
+}
+
+#activationlabel {
+  opacity: 0.5;
+  padding-right: 4px;
+}
+
+.activation #activationlabel {
+  font-weight: bold;
+  color: @color3;
+  opacity: 1;
+}
+
+.activation #text,
+.activation #icon,
+.activation #search {
+}
