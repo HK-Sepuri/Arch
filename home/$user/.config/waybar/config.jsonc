@@ -11,14 +11,14 @@
         "memory",
         "disk",
         "temperature",
-        "battery"
+        "battery",
+        "custom/keyboard-layout",
+        "custom/weather-layout"
     ],
     "modules-center": [
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "custom/weather-layout",
-        "custom/keyboard-layout",
         "pulseaudio",
         "backlight",
         "clock",

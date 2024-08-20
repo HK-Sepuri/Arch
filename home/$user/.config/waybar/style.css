@@ -23,7 +23,7 @@ button {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0 3px;
     transition: none;
     background-color: @color1;
     color: #FFD700;
@@ -148,7 +148,6 @@ button {
  #custom-weather-layoutt{
     border: 5px;
     border-radius: 20px;
-    
     background-color: @color8;
 }
 
