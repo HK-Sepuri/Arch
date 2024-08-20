@@ -160,7 +160,7 @@
         "bat": "BAT2"
     },
     "custom/keyboard-layout": {
-        "format": " Cheat", // Icon: keyboard
+        "format": "  Cheat", // Icon: keyboard
         "on-click": "~/.config/waybar/scripts/keyhint.sh"
     },
     "custom/power": {
