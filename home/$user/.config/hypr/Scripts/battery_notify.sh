@@ -23,7 +23,7 @@ while true; do
     # Check battery level and send notifications
     if [[ "$battery_percent" -ge 80 && $(cat /sys/class/power_supply/ACAD/online) -eq 1 ]]; then
         send_notification 2 "Battery is at ${battery_percent}%. Please consider stopping charging."
-    elif [[ "$battery_percent" -le 20 ]]; then
+    elif [[ "$battery_percent" -le 15 ]]; then
         send_notification 3 "Battery is low! Current level: ${battery_percent}%. Please charge."
     elif [[ "$battery_percent" -le 5 ]]; then
         send_notification 4 "Critical battery level! Only ${battery_percent}%. Please charge immediately!"

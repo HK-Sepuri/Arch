@@ -107,6 +107,31 @@
       "weight": 5
     }
   },
+  "plugins": [
+    {
+      "name": "power",
+      "placeholder": "Power",
+      "switcher_only": true,
+      "keep_sort": true,
+      "entries": [
+        {
+          "label": "Shutdown",
+          "icon": "system-shutdown",
+          "exec": "shutdown now"
+        },
+        {
+          "label": "Reboot",
+          "icon": "system-reboot",
+          "exec": "reboot"
+        },
+        {
+          "label": "Lock Screen",
+          "icon": "system-lock-screen",
+          "exec": "playerctl --all-players pause & hyprlock"
+        }
+      ]
+    }
+  ],
   "force_keyboard_focus": true,
   "list": {
     "max_entries": 50,
