@@ -8,6 +8,7 @@
       "context_aware": true,
       "name": "applications",
       "placeholder": "Applications",
+      "show_generic": true,
       "prioritize_new": true,
       "refresh": true,
       "show_icon_when_single": true,
