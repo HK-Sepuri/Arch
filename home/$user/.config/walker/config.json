@@ -4,7 +4,11 @@
   },
   "builtins": {
     "applications": {
-      "actions": true,
+      "actions": {
+        "enabled": true,
+        "hide_category": false,
+        "hide_without_query": true
+      },
       "context_aware": true,
       "name": "applications",
       "placeholder": "Applications",
