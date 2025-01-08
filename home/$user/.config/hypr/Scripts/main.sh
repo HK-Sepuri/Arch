@@ -8,4 +8,5 @@ source /home/hari/.config/hypr/Scripts/update_telegram.sh
 source /home/hari/.config/hypr/Scripts/update_librewolf.sh
 source /home/hari/.config/hypr/Scripts/update_swaync.sh
 source /home/hari/.config/hypr/Scripts/update_cava.sh
+source /home/hari/.config/hypr/Scripts/update_fuzzel.sh
 
